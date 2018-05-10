@@ -1,7 +1,7 @@
 package imgwebserver
 
 import (
-	"imgserver/utils"
+	"github.com/swanky2009/imgwebserver/utils"
 	"sync"
 	"sync/atomic"
 )

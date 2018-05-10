@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: imgwebserver
+  labels:
+    name: imgwebserver
+spec:
+  type: NodePort
+  ports: 
+  - name: http
+    protocol: TCP
+    port: 2501
+    targetPort: 2501
+    nodePort: 32501
+  selector:
+    name: imgwebserver
+

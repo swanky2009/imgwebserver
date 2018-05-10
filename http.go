@@ -4,7 +4,7 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
-	"imgwebserver/g"
+	"github.com/swanky2009/imgwebserver/g"
 )
 
 type imageServer struct {

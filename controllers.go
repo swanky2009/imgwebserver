@@ -5,7 +5,7 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/astaxie/beego"
 	"github.com/disintegration/imaging"
-	"imgwebserver/g"
+	"github.com/swanky2009/imgwebserver/g"
 	"io/ioutil"
 	"strconv"
 	"strings"

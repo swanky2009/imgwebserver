@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: imgwebserver       
+  labels:
+    name: imgwebserver
+spec:
+  replicas: 1          
+  selector:
+    name: imgwebserver
+  template:
+    metadata:    
+      labels:
+        name: imgwebserver
+    spec:
+      containers:
+      - name: imgwebserver
+        image: imgwebserver:v1   
+        volumeMounts:
+        - mountPath: /var/upload
+          name: upload-volume
+        ports:
+        - containerPort: 2501
+      volumes:
+      - name: upload-volume
+        hostPath:          
+          path: /var/upload
+
